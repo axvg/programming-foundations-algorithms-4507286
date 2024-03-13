@@ -3,7 +3,12 @@
 
 
 def countdown(x):
-    return
+    if x == 0:
+        print("Done!")
+    else:
+        print(x, "...")
+        countdown(x - 1)
+        print("Hey") # hey its called after all the "..."
 
 
 countdown(5)
